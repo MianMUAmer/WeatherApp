@@ -1,0 +1,25 @@
+<style>
+    div{
+        text-align:center;
+    }
+</style>
+
+<div>
+    <h1>{{$ctrl.list.data.name}}</h1>
+    <!-- <h2>{{city}}</h2> -->
+    <h3>Cordinates</h3>
+    <p>Lat : {{$ctrl.list.data.coord.lat}} , Lon : {{$ctrl.list.data.coord.lon}}</p>
+
+    <div>
+        <h3>Weather</h3>
+        <p>Description : {{$ctrl.list.data.weather[0].main}}</p>
+        <p>Description : {{$ctrl.list.data.weather[0].description}}</p>
+
+        <h4>Details</h4>
+        <p>Temperature : {{$ctrl.list.data.main.temp}}</p>
+        <p>Minimum : {{$ctrl.list.data.main.temp_min}}</p>
+        <p>Maximum : {{$ctrl.list.data.main.temp_max}}</p>
+        <p>Humidity: {{$ctrl.list.data.main.humidity}}</p>
+        <p>Pressuer: {{$ctrl.list.data.main.pressure}}</p>
+    </div>
+</div>
